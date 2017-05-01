@@ -10,6 +10,11 @@
 		30C0910A1EA278CE00444BCF /* BankModel20170414.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C091001EA278CE00444BCF /* BankModel20170414.framework */; };
 		30C0910F1EA278CE00444BCF /* BankModel20170414Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0910E1EA278CE00444BCF /* BankModel20170414Tests.swift */; };
 		30C091111EA278CE00444BCF /* BankModel20170414.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C091031EA278CE00444BCF /* BankModel20170414.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30C0911B1EA278ED00444BCF /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0911A1EA278ED00444BCF /* BankModel.swift */; };
+		30C091201EA6344400444BCF /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0911F1EA6344400444BCF /* Account.swift */; };
+		30C091221EA6345300444BCF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C091211EA6345300444BCF /* Person.swift */; };
+		30C091241EA6355300444BCF /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C091231EA6355300444BCF /* AccountTest.swift */; };
+		30C091261EA6356600444BCF /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C091251EA6356600444BCF /* PersonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,12 @@
 		30C091091EA278CE00444BCF /* BankModel20170414Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankModel20170414Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C0910E1EA278CE00444BCF /* BankModel20170414Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel20170414Tests.swift; sourceTree = "<group>"; };
 		30C091101EA278CE00444BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C0911A1EA278ED00444BCF /* BankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
+		30C0911D1EA293FD00444BCF /* BankModelPG.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BankModelPG.playground; sourceTree = "<group>"; };
+		30C0911F1EA6344400444BCF /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		30C091211EA6345300444BCF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		30C091231EA6355300444BCF /* AccountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
+		30C091251EA6356600444BCF /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				30C091031EA278CE00444BCF /* BankModel20170414.h */,
+				30C0911A1EA278ED00444BCF /* BankModel.swift */,
+				30C0911F1EA6344400444BCF /* Account.swift */,
+				30C091211EA6345300444BCF /* Person.swift */,
+				30C0911D1EA293FD00444BCF /* BankModelPG.playground */,
 				30C091041EA278CE00444BCF /* Info.plist */,
 			);
 			path = BankModel20170414;
@@ -81,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				30C0910E1EA278CE00444BCF /* BankModel20170414Tests.swift */,
+				30C091231EA6355300444BCF /* AccountTest.swift */,
+				30C091251EA6356600444BCF /* PersonTests.swift */,
 				30C091101EA278CE00444BCF /* Info.plist */,
 			);
 			path = BankModel20170414Tests;
@@ -148,6 +165,7 @@
 				TargetAttributes = {
 					30C090FF1EA278CE00444BCF = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					30C091081EA278CE00444BCF = {
@@ -196,6 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C091221EA6345300444BCF /* Person.swift in Sources */,
+				30C0911B1EA278ED00444BCF /* BankModel.swift in Sources */,
+				30C091201EA6344400444BCF /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C0910F1EA278CE00444BCF /* BankModel20170414Tests.swift in Sources */,
+				30C091261EA6356600444BCF /* PersonTests.swift in Sources */,
+				30C091241EA6355300444BCF /* AccountTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +345,7 @@
 		30C091151EA278CE00444BCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.BankModel20170414;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +365,7 @@
 		30C091161EA278CE00444BCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +384,7 @@
 		30C091181EA278CE00444BCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BankModel20170414Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.BankModel20170414Tests;
@@ -369,6 +396,7 @@
 		30C091191EA278CE00444BCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BankModel20170414Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.BankModel20170414Tests;
@@ -396,6 +424,7 @@
 				30C091161EA278CE00444BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30C091171EA278CE00444BCF /* Build configuration list for PBXNativeTarget "BankModel20170414Tests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +433,7 @@
 				30C091191EA278CE00444BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
