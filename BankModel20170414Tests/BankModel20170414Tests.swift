@@ -10,5 +10,5 @@ import XCTest
 @testable import BankModel20170414
 
 class BankModel20170414Tests: XCTestCase {
-    
+
 }

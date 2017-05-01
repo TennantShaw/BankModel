@@ -35,7 +35,6 @@
 		30C0910E1EA278CE00444BCF /* BankModel20170414Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel20170414Tests.swift; sourceTree = "<group>"; };
 		30C091101EA278CE00444BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C0911A1EA278ED00444BCF /* BankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
-		30C0911D1EA293FD00444BCF /* BankModelPG.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BankModelPG.playground; sourceTree = "<group>"; };
 		30C0911F1EA6344400444BCF /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		30C091211EA6345300444BCF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		30C091231EA6355300444BCF /* AccountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
@@ -86,7 +85,6 @@
 				30C0911A1EA278ED00444BCF /* BankModel.swift */,
 				30C0911F1EA6344400444BCF /* Account.swift */,
 				30C091211EA6345300444BCF /* Person.swift */,
-				30C0911D1EA293FD00444BCF /* BankModelPG.playground */,
 				30C091041EA278CE00444BCF /* Info.plist */,
 			);
 			path = BankModel20170414;

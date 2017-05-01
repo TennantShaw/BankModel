@@ -10,12 +10,22 @@ import XCTest
 @testable import BankModel20170414
 
 class PersonTests: XCTestCase {
-    func createCustomerTest (givenName: String, familyName: String, emailAddress: String) {
+    func testCreateCustomer() {
         let bank = Bank()
         let customer = Customer(emailAddress: "me@you.com", givenName: "Tennant", familyName: "Shaw")
         
         let result = bank.addCustomer(customer: customer)
-        let expected = Customer(emailAddress: "me@you.com", givenName: "Tennant", familyName: "Shaw")
+        let expected = customer
+        XCTAssertEqual(result, expected)
+    }
+    
+    func testCreateEmployee() {
+        let bank = Bank()
+        let employee = Person(givenName: "Tennant", familyName: "Shaw")
+        
+        let result = bank.addEmployee(employee: employee)
+        let expected = employee
         XCTAssertEqual(result, expected)
     }
 }
+
