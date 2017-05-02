@@ -43,8 +43,12 @@ class Bank {
         return account
     }
     
-    func bankAccountsSum() {
-        // should return the total off all combined accounts
+    func bankAccountsSum(accounts: [Account?]) -> Double {
+        var accountBalanceList = [Double]()
+        for value in accounts {
+            accountBalanceList.append((value?.balance)!)
+        }
+        return accountBalanceList.reduce(0, {$0 + $1})
     }
     
     func withdraw() {
