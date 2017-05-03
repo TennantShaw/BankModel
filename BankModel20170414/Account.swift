@@ -12,9 +12,9 @@ class Account: Hashable {
     var balance: Double
     var uuid: UUID = UUID()
     
-    init(balance: Double, uuid: UUID) {
+    init(balance: Double = 0.0, uuid: UUID = UUID()) {
         self.balance = balance
-        self.uuid = UUID()
+        self.uuid = uuid
     }
     
     enum AccountType {
@@ -32,7 +32,19 @@ class Account: Hashable {
     public static func == (lhs: Account, rhs: Account) -> Bool {
         return lhs.balance == rhs.balance && lhs.uuid == rhs.uuid
     }
+    
+    func withdraw(amount: Double) -> Bool {
+        if balance < amount {
+            return false
+        } else {
+            balance -= amount
+            return true
+        }
+    }
+    
+    
 }
+
 
 
 class CheckingAccount: Account {

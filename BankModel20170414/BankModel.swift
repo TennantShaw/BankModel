@@ -14,7 +14,7 @@ class Bank {
     var employeeList = [Person]()
     var customerList = [Customer]()
     var accountList = [Account]()
-    var accounts: Dictionary = [Person:Account]()
+    var accountsDirectory: [Customer:Set<Account>] = [:]
     
     let customer1: Customer = Customer(emailAddress: "me@you.com", givenName: "Tennant", familyName: "Shaw")
     let customer2: Customer = Customer(emailAddress: "you@me.com", givenName: "Shannon", familyName: "Shaw")
@@ -51,32 +51,32 @@ class Bank {
         return accountBalanceList.reduce(0, {$0 + $1})
     }
     
-    func withdraw() {
-        // should be able to withdraw money from a specific account
+    func assignAccountToCustomer(person: Customer, account: Set<Account>) -> [Customer:Set<Account>] {
+        accountsDirectory.updateValue(account, forKey: person)
+        return accountsDirectory
     }
     
-    func deposit() {
-        // should be able to deposit money into a specific account
+    func withdrawFromAccount(amount: Double, account: Account) -> Bool {
+        if amount <= account.balance {
+            account.withdraw(amount: amount)
+            return true
+        } else {
+            return false
+        }
     }
     
-    func pullCustomerAccounts() {
-        // should get all of a specific customers accounts
+    func deposit(amount: Double, account: Account) -> Bool {
+        account.balance.add(amount)
+        return true
     }
     
-    func customerAccountsSum() {
+    func pullCustomerAccounts(customer: Customer) -> Bool {
+       return false
+    }
+    
+    func customerAccountsSum(customer: Customer, account: Set<Account>) -> Bool {
+        return false
         // should get the sum of all accounts for a given customer
-    }
-    
-    var accountTotal: Double = 0.0
-    
-    
-    func distribute(funds withdrawalRequest: Double) -> Double {
-        let withdrawalRequest = min(withdrawalRequest, accountTotal)
-        accountTotal -= withdrawalRequest
-        return withdrawalRequest
-    }
-    func receive(funds: Double) {
-        accountTotal += funds
     }
 }
 

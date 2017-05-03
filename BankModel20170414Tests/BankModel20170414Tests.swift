@@ -20,4 +20,16 @@ class BankModel20170414Tests: XCTestCase {
         let expected = 9888.00
         XCTAssertEqual(result, expected)
     }
+    
+    func testAssignAccountToCustomer() {
+        let bank = Bank()
+        let savingAccount = Set<SavingsAccount>()
+        let customer1: Customer = Customer(emailAddress: "me@you.com", givenName: "Tennant", familyName: "Shaw")
+        let accountDictionary = [customer1:savingAccount]
+        let result = bank.assignAccountToCustomer(person: customer1, account: savingAccount)
+        let expected = accountDictionary
+        XCTAssertEqual(result, expected)
+    }
 }
+
+
