@@ -70,18 +70,17 @@ class Bank {
         return true
     }
     
-    func pullCustomerAccounts(customer: Customer) -> Bool {
-       return false
+    func pullCustomerAccounts(directory: [String: Set<Account>]) -> [Set<Account>] {
+        var accountList: [Set<Account>] = []
+        
+        for (_, value) in accountsDirectory {
+            accountList.append(value)
+        }
+       return accountList
     }
-    
-    func customerAccountsSum(customer: Customer, account: Set<Account>) -> Bool {
-        return false
-        // should get the sum of all accounts for a given customer
-    }
+
+
 }
-
-
-
 
 
 

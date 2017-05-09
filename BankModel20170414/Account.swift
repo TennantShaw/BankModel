@@ -42,6 +42,10 @@ class Account: Hashable {
         }
     }
     
+    func deposit(amount: Double) -> Bool {
+        balance += amount
+        return true
+    }
     
 }
 
